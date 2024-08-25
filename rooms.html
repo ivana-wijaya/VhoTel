@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <!-- hubungkan ke file css -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/room.css">
+</head>
+<body>
+    <!-- custom header element -->
+    <custom-header></custom-header>
+
+    <main>
+        <!-- main content goes here... -->
+        <div style="position: relative;" class="hero-section hero-bg bg-room">
+            <h1>Rooms</h1>
+            <div class="search-room">
+                <div class="search-input">
+                    <input type="text" placeholder="Search activities Destinations">
+                    <img src="./assets/room/search-icon.svg" alt="search icon">
+                </div>
+                <div class="info">
+                    <div>
+                        <p>Type Room</p>
+                        <h6>Premium <span></span></h6>
+                    </div>
+                    <div>
+                        <p>Guest</p>
+                        <h6>2 Adult <span></span></h6>
+                    </div>
+                    <div>
+                        <p>Beds</p>
+                        <h6>1 Single Queen <span></span></h6>
+                    </div>
+                    <div>
+                        <p>Sort by</p>
+                        <h6>All <span></span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-list"></div>
+    </main>
+
+    <!-- custom footer element -->
+    <custom-footer></custom-footer>
+    
+
+    <!-- hubungkan ke semua file javascript -->
+    <script src="./scripts/room.js"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* main section */
+main .main-content {
+    display: flex;
+}
+
+main .main-content div:nth-child(1){
+    flex-basis: 55%;
+}
+
+main .main-content div:nth-child(1) h2 {
+    padding: 200px 80px 0 80px;
+    font-size: 60px;
+}
+
+main .main-content div:nth-child(1) .info {
+    padding: 60px 80px 80px 100px;
+    display: flex;
+}
+
+main .main-content div:nth-child(1) .info div {cursor: pointer;}
+
+main .main-content div:nth-child(1) .info div:nth-child(1) {
+    flex-basis: 30%;
+}
+
+main .main-content div:nth-child(1) .info div:nth-child(2) {
+    flex-basis: 40%;
+}
+
+main .main-content div:nth-child(1) .info div:nth-child(3) {
+    flex: 1;
+}
+
+main .main-content div:nth-child(1) .info div p {
+    color: #9A9AB0;
+    font-size: 12px;
+    font-family: var(--font-mulish);
+}
+
+main .main-content div:nth-child(1) .info div h6 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #11142D;
+    font-weight: 700;
+    font-family: var(--font-mulish);
+    font-size: 16px;
+}
+
+main .main-content div:nth-child(1) .info div h6 span {
+    display: inline-block;
+    border: solid #C7923E;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+main .main-content div:nth-child(1) a {
+    margin-left: 80px;
+    padding: 18px 24px 18px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #C7923E;
+    color: white;
+    font-weight: 600;
+    font-family: var(--font-mulish);
+}
+
+main .main-content div:nth-child(2){
+    flex-basis: 45%;
+}
+
+main .main-content div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    object-fit: cover;
+}
+
+/* widget section */
+main .widget {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .widget div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+main .widget div .circle {
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    background-color: #9A9AB0;
+}
+
+main .widget div .circle img {
+    margin: auto;
+    transform: scale(.8);
+}
+
+main .widget div p {
+    color: #9A9AB0;
+    font-family: var(--font-mulish);
+}
+
+main .widget div h4 {
+    font-size: 24px;
+}
+
+/* rooms and suites section */
+main .rooms {
+    padding: 80px 0 80px 80px;
+}
+
+main .rooms .room-header {
+    padding-bottom: 80px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .rooms .room-header h3 {
+    font-size: 30px;
+}
+
+main .rooms .room-header .slider {
+    display: flex;
+    gap: 8px;
+}
+
+main .rooms .room-header .slider div {
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main .rooms .room-header .slider div:nth-child(1) {
+    border: 1px solid #C7923E;
+}
+
+main .rooms .room-header .slider div:nth-child(1) span {
+    display: inline-block;
+    border: solid #C7923E;
+    border-width: 0 3px 3px 0;
+    padding: 4px;
+    transform: rotate(135deg);
+}
+
+main .rooms .room-header .slider div:nth-child(2) {
+    background-color: #C7923E;
+}
+
+main .rooms .room-header .slider div:nth-child(2) span {
+    display: inline-block;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 4px;
+    transform: rotate(-45deg);
+}
+
+main .rooms .room-list {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+main .rooms .room-list img {
+    width: 369px;
+    height: 369px;
+    object-fit: cover;
+}
+
+main .rooms .room-list div {transition: all .3s;}
+
+main .rooms .room-list div.slide-to-right {
+    transform: translateX(-340px);
+}
+
+main .rooms ::-webkit-scrollbar {
+    display: none;
+}
+
+main .rooms .room-list h4 {
+    padding-top: 8px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1115px) {
+    main .main-content div:nth-child(1) .info {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 40px;
+    }
+
+    main .main-content div:nth-child(1) .info div:nth-child(1) {
+        flex-basis: 100%;
+    }
+    
+    main .main-content div:nth-child(1) .info div:nth-child(2) {
+        flex-basis: 100%;
+    }
+    
+    main .main-content div:nth-child(1) .info div:nth-child(3) {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+
+    main .main-content div:nth-child(1) h2 {
+        font-size: 40px;
+        padding: 120px 0 40px 40px;
+    }
+
+    main .main-content div:nth-child(1) a {
+        margin: 40px;
+    }
+}
+
+@media only screen and (max-width: 928px){
+    main .main-content div:nth-child(1) h2 {
+        padding: 40px 0 40px 40px;
+    }
+
+    main .main-content div:nth-child(2) img {
+        padding: 40px 40px 0 40px;
+    }
+
+    main .rooms {
+        padding: 80px 40px 40px 40px;
+    }
+
+    main .rooms .room-header {
+        padding: 40px 0;
+    }
+}

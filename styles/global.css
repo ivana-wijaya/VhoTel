@@ -1,0 +1,247 @@
+/* import font Lora from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+/* import font Mulish from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+/* css variables */
+:root {
+    /* font variable */
+    --font-lora: 'Lora', serif;
+    --font-mulish: 'Mulish', sans-serif;
+}
+
+/* reset semua default style pada element html */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: var(--font-lora);
+}
+
+/* ================================== HERO BACKGROUND =========================================== */
+/* hero section */
+main .hero-section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero-section h1 {
+    font-size: 140px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.bg-home {background-image: url("../assets/hero-background-1.png");}
+.bg-about {background-image: url("../assets/hero-background-2.png");}
+.bg-room {background-image: url("../assets/hero-background-3.png");}
+.bg-facilities {background-image: url("../assets/hero-background-4.png");}
+.bg-reservation {background-image: url("../assets/hero-background-5.png");}
+
+/* ================================== HOTEL FACILITIES ========================================== */
+/* hotel facilities */
+main .hotel-facilities {
+    padding-left: 100px;
+    padding-top: 120px;
+}
+
+main .hotel-facilities h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+main .hotel-facilities p {
+    width: 504px;
+    font-family: var(--font-mulish);
+    color: #515151;
+}
+
+main .hotel-facilities .facility-list {
+    padding: 64px 0 220px 0;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+main .hotel-facilities .facility-list ul {
+    width: 33%;
+}
+
+main .hotel-facilities .facility-list ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 24px;
+    gap: 8px;
+}
+
+main .hotel-facilities .facility-list ul li div {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #11142D;
+}
+
+main .hotel-facilities .facility-list ul li p {
+    color: #9A9AB0;
+    font-family: var(--font-mulish);
+}
+
+/* ================================== HEADER =========================================== */
+header nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    padding: 0 26px;
+    z-index: 10;
+}
+
+header nav .brand-logo {
+    flex-basis: 20%;
+}
+
+header nav .anchor {
+    flex-basis: 80%;
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    margin-top: -40px;
+}
+
+header nav .anchor a { color: white; font-weight: 400; }
+
+
+/* ================================== FOOTER =========================================== */
+footer {
+    display: flex;
+    height: 462px;
+}
+
+footer .left-side {
+    background-color: #27343F;
+    flex-basis: 40%;
+    padding: 50px 80px;
+}
+
+footer .left-side h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .left-side form {
+    display: flex;
+    gap: 8px;
+}
+
+footer .left-side p {
+    font-family: var(--font-mulish);
+    font-size: 16px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+footer .left-side input {
+    width: 270px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+footer .left-side button {
+    background-color: #C7923E;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+footer .right-side {
+    background-color: #1A242D;
+    flex-basis: 60%;
+    padding: 100px 80px;
+}
+
+footer .right-side p {
+    color: white;
+    margin-bottom: 80px;
+    font-family: var(--font-mulish);
+    font-size: 16px;
+}
+
+footer .right-side .footer-link {
+    display: flex;
+    gap: 40px;
+}
+
+footer .right-side .footer-link div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer .right-side .footer-link a {color: white; font-family: var(--font-mulish);}
+
+
+@media only screen and (max-width: 1115px)  {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer .left-side {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .right-side {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .hotel-facilities {
+        padding: 80px 0 0 40px;
+    }
+}
+
+@media only screen and (max-width: 928px){
+    header nav {
+        padding: 0;
+    }
+
+    header nav .anchor {
+        gap: 20px;
+    }
+
+    main .hero-section h1 {
+        font-size: 100px;
+    }
+
+
+    main .hotel-facilities .facility-list ul {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    main .hero-section h1 {
+        font-size: 80px;
+    }
+    
+}

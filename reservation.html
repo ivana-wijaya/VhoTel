@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <!-- hubungkan ke file css -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/reservation.css" />
+  </head>
+  <body>
+    <!-- custom header element -->
+    <custom-header></custom-header>
+
+    <main>
+      <!-- main content goes here... -->
+      <div class="hero-section hero-bg bg-reservation">
+        <h1>Reservation</h1>
+      </div>
+      <div class="booking-section">
+        <h2>Booking Now</h2>
+        <form id="reservationForm">
+          <div class="form-container">
+            <div class="billing-form">
+              <h3>Billing Details</h3>
+              <div class="name">
+                <label for="firstName">
+                  <h4>First Name</h4>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Input your First Name in Here"
+                  />
+                </label>
+                <label for="lastName">
+                  <h4>Last Name</h4>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Input your Last Name in Here"
+                  />
+                </label>
+              </div>
+              <label for="email">
+                <h4>Email Address</h4>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Input your Email Address in Here"
+                />
+              </label>
+              <label for="phone">
+                <h4>Phone Number</h4>
+                <div class="phone">
+                  <div>+62<span></span></div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Input your Phone Number in Here"
+                  />
+                </div>
+              </label>
+              <label for="passport">
+                <h4>Passport Number <span>(Optional)</span></h4>
+                <input
+                  type="text"
+                  name="passport"
+                  id="passport"
+                  placeholder="Input your Passport in Here"
+                />
+              </label>
+              <label for="address">
+                <h4>Address</h4>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Input your Address in Here"
+                />
+              </label>
+            </div>
+            <div class="room-item">
+              <img
+                class="room-image"
+                src="./assets/room/room-6.png"
+                alt="room image"
+              />
+              <div class="room-information">
+                <h3>Family Room with Jakarta View</h3>
+                <p>14 Februrary 2021</p>
+                <div class="room-info">
+                  <div>
+                    <img src="./assets/room/bed-icon.svg" alt="bed icon" />
+                    <p>1 Room</p>
+                  </div>
+                  <div>
+                    <img src="./assets/room/guest-icon.svg" alt="guest icon" />
+                    <p>2 Guest</p>
+                  </div>
+                  <div>
+                    <img src="./assets/room/time-icon.svg" alt="time icon" />
+                    <p>1 Night</p>
+                  </div>
+                </div>
+                <div class="room-price">
+                  <div>
+                    <p>Total Price</p>
+                    <p>Rp. 7.000.000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-cta">
+            <div>
+              <input type="checkbox" name="term" id="term" />
+              <label for="term"
+                >I have agree to the rules. Terms and Conditions.</label
+              >
+            </div>
+            <button type="submit">Continue to Payment</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- custom footer element -->
+    <custom-footer></custom-footer>
+
+    <!-- hubungkan ke semua file javascript -->
+    <script src="./scripts/main.js"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+    <script src="scripts/validation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- hubungkan ke file css -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <!-- custom header element -->
+    <custom-header></custom-header>
+
+    <main>
+        <!-- main content goes here... -->
+        <div class="hero-section hero-bg bg-home">
+            <h1>VhoTel</h1>
+        </div>
+        <div class="main-content">
+            <div>
+                <h2>Discover unparalleled hospitality at VhoTel, Jakarta's premier hotel</h2>
+                <div class="info">
+                    <div>
+                        <p>Guest</p>
+                        <h6>2 Adult <span></span></h6>
+                    </div>
+                    <div>
+                        <p>Date</p>
+                        <h6>12 - 13 April 2021 <span></span></h6>
+                    </div>
+                    <div>
+                        <p>Room Type</p>
+                        <h6>Premium Lion King <span></span></h6>
+                    </div>
+                </div>
+                <a>Booking Room</a>
+            </div>
+            <div>
+                <img src="./assets/home/main-image.png" alt="main image">
+            </div>
+        </div>
+        <div class="widget">
+            <div>
+                <div class="circle">
+                    <img src="./assets/home/date.svg" alt="date">
+                </div>
+                <p>Today date</p>
+                <h4>March 15 2021</h4>
+            </div>
+            <div>
+                <div class="circle">
+                    <img src="./assets/home/time.svg" alt="time">
+                </div>
+                <p>Current Time</p>
+                <h4>08:12 PM</h4>
+            </div>
+            <div>
+                <div class="circle">
+                    <img src="./assets/home/weather.svg" alt="weather">
+                </div>
+                <p>Temperature weather</p>
+                <h4>34<sup> o </sup>C</h4>
+            </div>
+        </div>
+        <div class="rooms">
+            <div class="room-header">
+                <h3>Our Room & Suites</h3>
+                <div class="slider">
+                    <div class="left">
+                        <span></span>
+                    </div>
+                    <div class="right">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="room-list">
+                <div>
+                    <img src="./assets/home/deluxe-room.png" alt="deluxe-room">
+                    <h4>Deluxe Room</h4>
+                </div>
+                <div>
+                    <img src="./assets/home/standard-room.png" alt="standard-room">
+                    <h4>Standard Room</h4>
+                </div>
+                <div>
+                    <img src="./assets/home/premium-room.png" alt="premium-room">
+                    <h4>Premium Room</h4>
+                </div>
+                <div>
+                    <img src="./assets/home/family-room.png" alt="family-room">
+                    <h4>Family Room</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Hotels Facilities</h3>
+            <p>Experience a world-class stay with our extensive range of exceptional hotel facilities designed to cater to your every need.</p>
+            <custom-facilities></custom-facilities>
+        </div>
+    </main>
+
+    <!-- custom footer element -->
+    <custom-footer></custom-footer>
+    
+
+    <!-- hubungkan ke semua file javascript -->
+    <script src="./scripts/home.js"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+    <script src="./components/Facilities.js"></script>
+</body>
+</html>
